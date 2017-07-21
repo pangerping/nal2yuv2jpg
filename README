@@ -1,0 +1,10 @@
+
+
+cd 3rd/build.sh
+
+./build.sh
+
+cd src
+make
+
+eg. ./transtools -src_type nal -dst_type jpg -src_uri xx.h264
