@@ -1,0 +1,1 @@
+config:x86:x86_64:generic:linux:gcc 5.4.0 (Ubuntu 5.4.0-6ubuntu1~16.04.2) 20160609:--prefix=./../install --enable-gpl --disable-shared --enable-static --enable-libx264 --enable-nonfree --enable-pic --enable-decoder=h264 --enable-swscale --enable-swresample --disable-optimizations --disable-stripping --enable-debug

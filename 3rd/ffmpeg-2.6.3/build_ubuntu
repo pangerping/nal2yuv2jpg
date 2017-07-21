@@ -1,0 +1,9 @@
+#!/bin/bash
+
+make clean
+make distclean
+#--extra-cflags="-fvisibility=hidden" 
+./configure --prefix=`pwd`/../:install   --extra-cflags="-fvisibility=hidden" --enable-gpl  --enable-nonfree --enable-pic --disable-programs --disable-doc --disable-htmlpages --disable-manpages --disable-podpages --disable-txtpages  --disable-everything  --disable-avdevice   --disable-avformat   --disable-postproc --disable-avfilter --disable-avresample --disable-network --disable-decoders --enable-decoder=h264 --enable-decoder=aac  --enable-swscale  --enable-swresample
+
+make -j4  install
+

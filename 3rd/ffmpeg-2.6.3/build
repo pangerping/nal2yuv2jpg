@@ -1,0 +1,10 @@
+#!/bin/bash
+
+make clean
+make distclean
+#--extra-cflags="-fvisibility=hidden" 
+CFLAGS="-I./../install/include" LDFLAGS="-L./../install/lib -L/lib64" ./configure --prefix=`pwd`/../install     --enable-gpl  --enable-shared --disable-static --enable-nonfree --enable-pic  --enable-decoder=h264 --enable-decoder=aac --enable-libfaac --enable-swscale  --enable-swresample --enable-shared --disable-optimizations --disable-stripping  --enable-rdft  --enable-debug
+
+make -j4 install
+
+
