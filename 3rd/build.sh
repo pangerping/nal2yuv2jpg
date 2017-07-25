@@ -1,6 +1,5 @@
 #!/bin/bash
 basepath=$(cd `dirname $0`; pwd)
-
 cd ${basepath}/x264
 chmod +x configure
 chmod +x *.sh
@@ -19,5 +18,5 @@ make -j4 install
 
 cd ${basepath}/gflags/src
 chmod +x configure
-./configure --disable-shared --prefix=/home/pang/git/gitlib/test/demo/transtools/3rd/install
+./configure --disable-shared --prefix=${basepath}/install
 make install
